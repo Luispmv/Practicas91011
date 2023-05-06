@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+nav{
+    height: 15vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+nav a{
+    text-decoration: none;
+    color: black;
+    font-size: 2rem;
+}
+section{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    background-color: black;
+    animation: CambiarFondo 5s infinite;
+    height: 100vh;
+}
+@keyframes CambiarFondo{
+    0%{
+        background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+    }
+    100%{
+        background: rgb(78,236,160);
+background: linear-gradient(90deg, rgba(78,236,160,1) 0%, rgba(121,9,75,1) 35%, rgba(255,0,179,1) 100%);
+    }
+}
+
+section .cuadro1{
+    background-color: darkorange;
+    animation: escalarCuadrado  5s infinite;
+}
+section .cuadro2{
+    border-radius: 50%;
+    background-color: rgb(9, 255, 0);
+    animation: escalarCuadrado  5s infinite;
+}
+section .cuadro3{
+    background-color: rgb(174, 0, 255);
+    animation: escalarCuadrado  5s infinite;
+}
+section .cuadro4{
+    border-radius: 50%;
+    background-color: rgb(255, 0, 13);
+    animation: escalarCuadrado  5s infinite;
+}
+section .cuadro5{
+    background-color: rgb(0, 26, 255);
+    animation: escalarCuadrado  5s infinite;
+}
+section .cuadro6{
+    border-radius: 50%;
+    background-color: rgb(197, 236, 21);
+    animation: escalarCuadrado  5s infinite;
+}
+section .cuadro7{
+    background-color: blanchedalmond;
+    animation: escalarCuadrado  5s infinite;
+}
+section .cuadro8{
+    border-radius: 50%;
+    background-color: brown;
+    animation: escalarCuadrado  5s infinite;
+}
+section .cuadro9{
+    background-color: coral;
+    animation: escalarCuadrado  5s infinite;
+}
+section .cuadro10{
+    border-radius: 50%;
+    background-color: cornflowerblue;
+    animation: escalarCuadrado  5s infinite;
+}
+
+@keyframes escalarCuadrado{
+    0%{
+        transform: scale(75%);
+    }
+    100%{
+        transform: scale(100%);
+    }
+}
+
+/*Practica 10*/
+.contenido{
+    height: 100vh;
+}
+h1{
+    font-size: 10em;
+}
+#descripcion{
+    background-color: rosybrown;
+}
+#menu{
+    float: none;
+    width: auto;
+}
+#opciones{
+    margin: 0px;
+    padding: 0px;
+}
+.opcionesmenu{
+    background: pink;
+    border: 2px solid palevioletred;
+    list-style-type: none;
+    margin: 10px;
+    padding: 10px;
+
+}
+@media screen and (min-width: 480px){
+    #menu {width: 200px; float: left;}
+}
+/*Practica 11*/
+.Practica11{
+    height: 100vh;
+}
+@media screen and (max-width: 992px) {
+    body{
+        background-color: blue;
+        color: white;
+        font-size: 12px;
+    }  
+}
+@media screen and (max-width:600px){
+    body {
+        background-color: green;
+        color: azure;
+        font-size: 8px;
+    }
+}
+
